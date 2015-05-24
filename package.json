@@ -1,0 +1,22 @@
+{
+  "name": "ciTestGrzyb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://firuaun%40gmail.com@github.com/firuaun/ciTestGrzyb.git"
+  },
+  "author": "firuaun@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/firuaun/ciTestGrzyb/issues"
+  },
+  "homepage": "https://github.com/firuaun/ciTestGrzyb"
+}
