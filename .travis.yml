@@ -2,3 +2,14 @@ language: node_js
 node_js:
 - '0.10'
 before_install: npm install -g mocha
+deploy:
+  provider: s3
+  access_key_id: AKIAIAEWDAFS4X6S52OQ
+  secret_access_key:
+    secure: KXl6q9EzvsWBXFdc+HGPQzWxr/iyJE9lfzbjZgyqzCwqHQtgWqxUq+VwrsURtIv1l7HtoD2A+tCFT7fWZyDzAjA3s95as1EYZN7pdp33CiLBDO8hpMIFKuWKah0zuBJB/QRqtYX/IhMh57vYKSqpCAVMRJxt+fBjcqeNNCoE5iNR7J13WT8A7RsrEqyAzz5YFQ6ylf3VATq8NvomXr3k/g250keUxewph/Vmt248Ia3Bn5c2c6VmwmcqG8jkcStNcC5vjGzMUDWo42Q08ukeejtMA+Gunx4saNRb8k8NtMse8a4DGMdf0iRq3XhQxkww3F3VK9AV3bZLgqzJYTF2jQsqHuKqaBuKJuMIOOL2/wk2v4tMugsFah2okNVb6WJ0+g+DEj9+aoR4naC1TzCYX+4nJtHmhcLsMiViqRcba29pfxC9CxvRaZxLL2SRg+qH0yDKAqSATGl/wex2OsScD9jsNb1+nAZaibJDnjDUP8fp6amn7U9xPZO+RcmLPL416pQbUApU0jhg0fZx6a1B5CGJXj46aUosp/o5BAOOmw+62k6kpeEeclpWTHiqtUv3VPQVb4I8I6u3OMAk7LDudepiT3tSe0mwg6ZckMGonMVuoGtp1yJw4cK0vYieG+ACq8wZr2BE6iR9yv5YA7dO09KtzbzNEMmQqr9Rgah/TNY=
+  bucket: deploy-weeia
+  local-dir: grzyb
+  upload-dir: grzyb
+  acl: public_read
+  on:
+    repo: firuaun/ciTestGrzyb
