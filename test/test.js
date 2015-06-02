@@ -9,4 +9,8 @@ describe("discount Calculator",function(){
     	var discountResult = discountCalculator.discount();
         assert.equal(discountResult, 0, "discount: " + discountResult);
     });
+    it("should return 100 with first argument equals test",function(){
+    	var discountResult = discountCalculator.discount('test');
+        assert.equal(discountResult, 100, "discount: " + discountResult);
+    });
 });
